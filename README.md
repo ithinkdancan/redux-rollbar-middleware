@@ -13,7 +13,9 @@ It demands basically no additional configuration except default Rollbar configur
 ## Installation
 Run `npm install --save redux-rollbar-middleware`.
 
-[Add Rollbar.js initial configuration according to docs](https://rollbar.com/docs/notifier/rollbar.js/#quick-start). Copy into your <HEAD> section:
+[Add Rollbar.js initial configuration according to docs](https://rollbar.com/docs/notifier/rollbar.js/#quick-start).
+
+As an exmaple, you can copy following into your <HEAD> section and include Rollbar snippet (not included below):
 ```
 <script>
   var _rollbarConfig = {
@@ -27,6 +29,8 @@ Run `npm install --save redux-rollbar-middleware`.
   // <!-- HERE SHOULD BE ROLLBAR SNIPPET, YOU WILL FIND IT ON ROLLBAR JS WEBSITE -->
 </script>
 ```
+
+Remember that this is only an example configuration, you can easily change everything in your Rollbar config.
 
 ## Usage
 Import `rollbarMiddleware` function from package:
