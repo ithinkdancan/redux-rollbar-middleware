@@ -41,7 +41,7 @@ import rollbarMiddleware from 'redux-rollbar-middleware';
 Create middleware in your store creator:
 ```
 export default function configureStore(initialState) {
-  const rollbar = rollbarMiddleware(stateSanitizer);
+  const rollbar = rollbarMiddleware();
 
   return createStore(
     rootReducer,
